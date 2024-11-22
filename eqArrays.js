@@ -13,13 +13,14 @@ const eqArrays = function(arr1,arr2) {
     if (arr1[i] !== arr2[i]) {
       return false;
     }
-    return true;
   }
+  return true;
 };
 //test cases
 assertEqual(eqArrays([1,2,3],[1,2,3]),true);
 assertEqual(eqArrays([1,2,],[1,2,3]),false);
-assertEqual(eqArrays([],[]),undefined);
+assertEqual(eqArrays([2,3,],[1,2]),false);
+assertEqual(eqArrays([],[]),true);
 assertEqual(eqArrays([1,2,3],[1,2]),false);
 assertEqual(eqArrays([1],[]),false);
 assertEqual(eqArrays(["hi",2,3],["hi",2,3]),true);
