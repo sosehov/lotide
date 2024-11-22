@@ -10,12 +10,12 @@ const eqArrays = function(arr1,arr2) {
   return true;
 };
 const assertArraysEqual = function(array1, array2) {
-  if (eqArrays(array1,array2)){
+  if (eqArrays(array1,array2)) {
     console.log(`🟢 Assertion Passed: [${array1}] === [${array2}]`);
-  }
-  else {console.log(`🔴 Assertion Failed: [${array1}] !== [${array2}]`);
+  } else {
+    console.log(`🔴 Assertion Failed: [${array1}] !== [${array2}]`);
   }
 };
 
-console.log(assertArraysEqual([23, 4, 0, 6], [23, 4, 6, 6]));
-console.log(assertArraysEqual([23, 4, 0, 6], [23, 4, 0, 6]));
+assertArraysEqual([23, 4, 0, 6], [23, 4, 6, 6]);
+assertArraysEqual([23, 4, 0, 6], [23, 4, 0, 6]);
