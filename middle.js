@@ -20,16 +20,14 @@ const assertArraysEqual = function(array1, array2) {
 };
 //This function takes an array and returns the middle-most element(s)
 const middle = function(arr) {
-  let midArr = [];
   let lengthArr = arr.length;
   if (lengthArr < 3) {
-    return midArr;
+    return [];
   } else if (lengthArr % 2 !== 0) {
-    midArr.push(arr[Math.floor((lengthArr / 2))]);
+    return [(arr[Math.floor((lengthArr / 2))])];
   } else {
-    midArr.push(arr[(lengthArr / 2) - 1], arr[lengthArr / 2]);
+    return [arr[(lengthArr / 2) - 1], arr[lengthArr / 2]];
   }
-  return midArr;
 };
 
 //TEST CODE
@@ -40,3 +38,4 @@ assertArraysEqual(middle([1,2,3]),[2]);
 assertArraysEqual(middle([1,2,3,4]),[2,3]);
 assertArraysEqual(middle([1,2,3,4,5]),[3]);
 assertArraysEqual(middle([1,2,3,4,5,6,7]),[4]);
+assertArraysEqual(middle(["John", "Marrie", "Finn", "Kevin", "Jessica"]),["Finn"]);
