@@ -25,7 +25,7 @@ const middle = function(arr) {
   if (lengthArr < 3) {
     return midArr;
   } else if (lengthArr % 2 !== 0) {
-    midArr.push(arr[Math.round((lengthArr / 2)) - 1]);
+    midArr.push(arr[Math.floor((lengthArr / 2))]);
   } else {
     midArr.push(arr[(lengthArr / 2) - 1], arr[lengthArr / 2]);
   }
@@ -36,6 +36,7 @@ const middle = function(arr) {
 assertArraysEqual(middle([]),[]);
 assertArraysEqual(middle([1]),[]);
 assertArraysEqual(middle([1,2]),[]);
+assertArraysEqual(middle([1,2,3]),[2]);
 assertArraysEqual(middle([1,2,3,4]),[2,3]);
 assertArraysEqual(middle([1,2,3,4,5]),[3]);
 assertArraysEqual(middle([1,2,3,4,5,6,7]),[4]);
