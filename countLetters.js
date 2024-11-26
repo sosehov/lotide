@@ -17,9 +17,9 @@ const countLetters = function(sentence) {
 };
 
 //TEST CODE
-const result2 = countLetters("LHL");
-assertEqual(result2["L"], 2);
-assertEqual(result2["H"], 1);
 const result1 = countLetters("lighthouse in the house");
 assertEqual(result1["l"], 1);
 assertEqual(result1["h"], 4);
+const result2 = countLetters("LHL");
+assertEqual(result2["L"], 2);
+assertEqual(result2["H"], 1);
