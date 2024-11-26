@@ -13,10 +13,13 @@ const countLetters = function(sentence) {
       result[letter] = (result[letter] || 0) + 1;
     }
   }
-  console.log(result);
   return result;
 };
 
 //TEST CODE
+const result2 = countLetters("LHL");
+assertEqual(result2["L"], 2);
+assertEqual(result2["H"], 1);
 const result1 = countLetters("lighthouse in the house");
 assertEqual(result1["l"], 1);
+assertEqual(result1["h"], 4);
