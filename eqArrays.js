@@ -5,6 +5,7 @@ const assertEqual = function(actual, expected) {
     console.log(`🔴 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
+//This function takes two arrays and returns true or false based on perfect match
 const eqArrays = function(arr1,arr2) {
   if (arr1.length !== arr2.length) {
     return false;
