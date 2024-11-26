@@ -10,7 +10,6 @@ const assertEqual = function(actual, expected) {
 //This function takes an object and a value and returns the first key which contains the given value
 const findKeyByValue = function(obj, val) {
   let objectKeys = Object.keys(obj);
-  console.log(objectKeys);
   for (let el of objectKeys) {
     if (obj[el] === val) {
       return el;
