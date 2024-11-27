@@ -22,8 +22,8 @@ const eqArrays = function(arr1,arr2) {
 
 //This is an assertion function that compares two objects and returns true or false
 const eqObjects = function(object1, object2) {
-  let objectKeys1 = Object.keys(object1);
-  let objectKeys2 = Object.keys(object2);
+  const objectKeys1 = Object.keys(object1);
+  const objectKeys2 = Object.keys(object2);
   if (objectKeys1.length !== objectKeys2.length) {
     return false;
   }
