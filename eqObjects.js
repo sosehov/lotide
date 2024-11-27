@@ -28,7 +28,7 @@ const eqObjects = function(object1, object2) {
     return false;
   }
   for (let el of objectKeys1) {
-    if (object1[el].isArray && object2[el].isArray) {
+    if (Array.isArray(object1[el]) && Array.isArray(object2[el])) {
       if (!eqArrays(object1[el],object2[el])) {
         return false;
       }
