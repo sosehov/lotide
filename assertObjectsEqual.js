@@ -13,8 +13,8 @@ const eqArrays = function(arr1,arr2) {
 
 //This is an assertion function that compares two objects and returns true or false
 const eqObjects = function(object1, object2) {
-  let objectKeys1 = Object.keys(object1);
-  let objectKeys2 = Object.keys(object2);
+  const objectKeys1 = Object.keys(object1);
+  const objectKeys2 = Object.keys(object2);
   if (objectKeys1.length !== objectKeys2.length) {
     return false;
   }
@@ -50,3 +50,7 @@ assertObjectsEqual(object1, object2);
 const object3 = {a:'1', b:'4'};
 const object4 = {a:'1', b:'7'};
 assertObjectsEqual(object4, object3);
+
+const object5 = {a: [1, 2, 3], b: 'hello'};
+const object6 = {b: 'hello', a: [1, 2, 3]};
+assertObjectsEqual(object5, object6);
