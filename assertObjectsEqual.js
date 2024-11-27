@@ -1,3 +1,16 @@
+//This function takes two arrays and returns true or false based on perfect match
+const eqArrays = function(arr1,arr2) {
+  if (arr1.length !== arr2.length) {
+    return false;
+  }
+  for (let i = 0; i < arr1.length; i++) {
+    if (arr1[i] !== arr2[i]) {
+      return false;
+    }
+  }
+  return true;
+};
+
 //This is an assertion function that compares two objects and returns true or false
 const eqObjects = function(object1, object2) {
   let objectKeys1 = Object.keys(object1);
@@ -20,9 +33,9 @@ const eqObjects = function(object1, object2) {
 };
 
 //This is an assertion function that takes two objects, compares them using eqObjects() and prints out a Pass or Fail message
-const assertObjectsEqual = function (actual, expected) {
+const assertObjectsEqual = function(actual, expected) {
   const inspect = require("util").inspect;
-  if (eqObjects(actual, expected)){
+  if (eqObjects(actual, expected)) {
     console.log(`🟢 Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`);
   } else {
     console.log(`🔴 Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);
@@ -30,10 +43,10 @@ const assertObjectsEqual = function (actual, expected) {
 };
 
 //TEST CODE
-object1 = {a:1, b:2, c:3};
-object2 = {a:1, b:2, c:3};
+const object1 = {a:1, b:2, c:3};
+const object2 = {a:1, b:2, c:3};
 assertObjectsEqual(object1, object2);
 
-object3 = {a:'1', b:'4'};
-object4 = {a:'1', b:'7'};
+const object3 = {a:'1', b:'4'};
+const object4 = {a:'1', b:'7'};
 assertObjectsEqual(object4, object3);
