@@ -15,7 +15,6 @@ const findKey = function(obj, callback) {
       return key;
     }
   }
-  return undefined;
 };
 
 //TEST CODE
@@ -57,3 +56,6 @@ const results3 = findKey(
   (x) => x === 4
 );
 assertEqual(results3, 'noma');
+
+const results4 = findKey({},(x) => x === 4);
+assertEqual(results4, undefined);
