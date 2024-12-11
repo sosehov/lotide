@@ -18,7 +18,6 @@ const assertArraysEqual = function(array1, array2) {
   }
 };
 
-
 //This function returns a subset of a given array by removing unwanted elements
 const without = function(source, itemsToRemove) {
 let refinedSource = [];
@@ -36,6 +35,8 @@ for (let i = 0; i < source.length; i++){
 }
 return refinedSource;
 };
+
+// TEST CODE
 const words = ["hello", "world", "lighthouse"];
 without(words, ["lighthouse"]);
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
