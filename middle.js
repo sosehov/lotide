@@ -1,6 +1,3 @@
-const eqArrays = require("./eqArrays");
-const assertArraysEqual = require("./assertArraysEqual");
-
 //This function takes an array and returns the middle-most element(s)
 const middle = function(arr) {
   let lengthArr = arr.length;
