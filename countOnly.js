@@ -21,18 +21,7 @@ const countOnly = function(allItems, itemsToCount) {
   return results;
 };
 
-/* replaced the second if with load and store
-const countOnlyA = function(allItems, itemsToCount){
-  let results = {};
-  for (let item of allItems) {
-    if (itemsToCount[item]) {
-      results[item] = ( results[item] || 0 ) + 1;
-    }
-  }
-  return results;
-};
-*/
-
+// TEST CODE
 const firstNames = [
   "Karl",
   "Salima",
