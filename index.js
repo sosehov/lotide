@@ -16,27 +16,7 @@ const map = require('./map');
 const takeUntil = require('./takeUntil');
 const without = require('./without');
 
-/*module.exports = {
-  head: head,
-  tail: tail,
-  middle: middle,
-  assertArraysEqual: assertArraysEqual,
-  assertEqual: assertEqual,
-  assertObjectsEqual: assertObjectsEqual,
-  countLetters: countLetters,
-  countOnly: countOnly,
-  eqArrays: eqArrays,
-  eqObjects: eqObjects,
-  findKey: findKey,
-  findKeyByValue: findKeyByValue,
-  flatten: flatten,
-  letterPositions: letterPositions,
-  map: map,
-  takeUntil: takeUntil,
-  without: without
-}; */
-
-// The following code uses ES6 Property Value Shothand to do exactly the same thing as the commented out code above
+// The following code uses ES6 Property Value Shothand approach
 module.exports = {
   head,
   tail,
