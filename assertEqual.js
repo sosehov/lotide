@@ -1,4 +1,6 @@
-//This is a custom assert function which takes in two values, compares them and prints a message  
+const _ = require('./index');
+
+//This is an assertion function which takes in two values, compares them and prints a message  
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`🟢 Assertion Passed: ${actual} === ${expected}`);
@@ -6,6 +8,3 @@ const assertEqual = function(actual, expected) {
     console.log(`🔴 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
-
-module.exports = assertEqual;
-
