@@ -1,6 +1,4 @@
-const _ = require('./index');
-
-//This function returns the first element of an array
+// This function returns the first element of an array
 const head = function(array){
   return array[0];
 }
