@@ -1,6 +1,4 @@
-const _ = require('./index');
-
-//This function takes a string and returns an object with letters found and their indices
+// This function takes a string and returns an object with letters found and their indices
 const letterPositions = function(sentence) {
   let result = {};
   for (let i = 0; i < sentence.length; i++) {
@@ -17,3 +15,7 @@ const letterPositions = function(sentence) {
 
 module.exports = letterPositions;
 
+/* TEST CODE
+assertArraysEqual(letterPositions("Hello").e, [1]);
+assertArraysEqual(letterPositions("HelloYellow").e, [1,6]);
+assertArraysEqual(letterPositions("HeLloYellow").l, [3,7,8]); */
