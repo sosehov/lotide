@@ -1,6 +1,4 @@
-const _ = require('./index');
-
-//This function takes an array and flattens the inner arrays
+// This function takes an array and flattens the inner arrays
 const flatten = function(arr) {
   let flatArr = [];
   for (let i = 0; i < arr.length; i++) {
