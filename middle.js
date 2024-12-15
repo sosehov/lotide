@@ -1,5 +1,3 @@
-const _ = require('./index');
-
 //This function takes an array and returns the middle-most element(s)
 const middle = function(arr) {
   let lengthArr = arr.length;
