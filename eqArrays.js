@@ -1,6 +1,4 @@
-const _ = require('./index');
-
-//This function takes two arrays and returns true or false based on perfect match
+// This function takes two arrays and returns true or false based on perfect match
 const eqArrays = function(arr1,arr2) {
   if (arr1.length !== arr2.length) {
     return false;
