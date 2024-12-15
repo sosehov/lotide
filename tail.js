@@ -1,5 +1,3 @@
-const _ = require('./index');
-
 // This function returns the tail of an array
 const tail = function(array) {
   if (array.length === 0) { 
