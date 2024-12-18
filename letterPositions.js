@@ -10,7 +10,7 @@ const letterPositions = function(sentence) {
   for (let i = 0; i < sentence.length; i++) {
     const char = sentence[i];
     // Skip spaces
-    if (char === ' '){
+    if (char === ' ') {
       continue;
     }
     // Add the position of the character to the result object
