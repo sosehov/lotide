@@ -18,11 +18,11 @@ const eqObjects = function(object1, object2) {
     if (Array.isArray(object1[el]) && Array.isArray(object2[el])) {
       if (!eqArrays(object1[el],object2[el])) {
         return false;
-      } 
-    } else if (object1[el] !== object2[el]) {
-        return false;
       }
+    } else if (object1[el] !== object2[el]) {
+      return false;
     }
+  }
   // If all checks pass, the objects are equal
   return true;
 };
