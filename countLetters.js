@@ -2,9 +2,10 @@
 const countLetters = function(sentence) {
   let result = {};
   // Looping through each character in the sentence
-  for (const letter of sentence) {
-    if (letter !== " ") {
-      result[letter] = (result[letter] || 0) + 1;
+  for (let char of sentence) { // Count alphabetic characters only
+    if (/[a-zA-Z]/.test(char) !== " ") {
+      char = char.toLowerCase(); // For case insensitive counting
+      result[char] = (result[char] || 0) + 1;
     }
   }
   return result;
