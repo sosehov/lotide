@@ -41,5 +41,5 @@ The following functions are currently implemented:
 - `map`: This function takes in an array and a callback function and returns a modified version of the same array
 - `middle`: This function takes an array and returns the middle-most element(s)
 - `tail`: This function returns the tail of an array
-- `takeUntil`: This function takes an array and a callback function as input, keep collecting items from the array until the callback returns a truthy value
+- `takeUntil`: This function takes an array and a callback as input, keep collecting items from the array until the callback returns a truthy value
 - `without`: This function returns a subset of a given array by removing unwanted elements
