@@ -17,8 +17,3 @@ const without = function(source, itemsToRemove) {
 };
 
 module.exports = without;
-
-/* TEST CODE
-const words = ["hello", "world", "lighthouse"];
-without(words, ["lighthouse"]);
-assertArraysEqual(words, ["hello", "world", "lighthouse"]); */
