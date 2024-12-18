@@ -1,9 +1,15 @@
 // This function returns the tail of an array
 const tail = function(array) {
-  if (array.length === 0) { 
+  // Ensure the input is an array
+  if (!Array.isArray(array)) {
+    console.log('Input must be an array');
+  }
+  // Return en empty array if the input array is empty
+  if (array.length === 0) {
     return [];
   }
-  return array.slice(1); // this will return an empty array if there's only one element in the array
+  // Return the tail
+  return array.slice(1);
 };
 
 module.exports = tail;
